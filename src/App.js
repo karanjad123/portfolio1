@@ -1,9 +1,10 @@
 
 import './App.css';
+import Navbar from './components/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
   return (
-    <h1>wassupnpm</h1>
+    <Navbar/>
   );
 }
 
