@@ -1,0 +1,15 @@
+.header-wrapper {
+  position: relative;
+  background: url("https://www.komando.com/wp-content/uploads/2018/11/dreamstime_m_87808373.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+.main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condesed", sans-serif;
+}

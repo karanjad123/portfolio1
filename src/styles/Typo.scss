@@ -1,0 +1,82 @@
+
+.HomePage{
+    position: absolute;
+    background: url('https://cdn.wallpapersafari.com/2/54/N4AyOo.jpg');
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 70rem;
+}
+.NavBar1 {
+    margin-top: 10rem;
+    height: 70vh;
+    .nav1 {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+  
+      .profile1 {
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+        
+        img {
+          margin-top: 10rem;
+          width: 30%;
+          
+          border: 1px solid rgb(34, 25, 82);
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+}
+
+.hero-text{
+    margin-top: 3rem;
+    color: white;
+    text-align: center;
+    font-size: 3.6rem;
+    span{
+        color: rgb(30, 236, 47);
+    }
+}
+
+.h-sub-text{
+    margin: 2rem;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+.h-sub-text1{
+    font-size: 1.5rem;
+    margin-top: -2rem;
+    color: rgb(30, 236, 47);
+    text-align: center;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    .icon-holder{
+        margin-right: 1rem;
+        .icon{
+           font-size: 2.8rem;
+           color: #a4acc4;
+           transition: all .4s ease-in-out;
+        }
+        .fb:hover{
+            color: blue;
+        }
+        .gh:hover{
+            color: rgba(212, 45, 212, 0.788);
+        }
+        .yt:hover{
+            color: rgb(8, 44, 247);
+        }
+    }
+}
