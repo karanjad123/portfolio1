@@ -6,12 +6,15 @@
     .skill-title{
         font-size: 1.4rem;
         font-weight: 400;
+        color: white;
     }
 
     .skill-bar{
         display: flex;
         align-items: center;
+        
         .skill-text{
+            color: white;
         }
         .skill-progress{
             width: 100%;
@@ -20,7 +23,7 @@
                height: .5rem;
                background-color: red;
                margin-left: 1rem;
-               background-color: #747b813f;
+               background-color: #ffffff3f;
                position: relative;
                .inner-pregress{
                     position: absolute;

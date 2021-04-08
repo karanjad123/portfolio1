@@ -24,12 +24,14 @@ function PortfoliosPage() {
 
     return (
         <div className="PortfolioPage">
+            <div className='para3'>
             <div className="title">
                 <Title title={'Portfolios'} span={'portfolios'} />
             </div>
             <div className="portfolios-data">
                 <Categories filter={filter} categories={categories} />
                 <MenuItems menuItem={menuItems} />
+            </div>
             </div>
         </div>
     )

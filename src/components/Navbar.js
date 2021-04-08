@@ -1,6 +1,10 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom';
 import karan from '../images/Capture.PNG'
+import {faFacebook} from '@fortawesome/free-brands-svg-icons';
+import {faGithub} from '@fortawesome/free-brands-svg-icons';
+import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function Navbar() {
     return (
         <div className="NavBar">
@@ -32,17 +36,17 @@ function Navbar() {
                             Contact
                         </NavLink>
                     </li>
-                    <li className='img'>
+                    <li className='icons'>
                         
-                        <NavLink to="/facebook" >
-                            <img src='https://i.pinimg.com/originals/b7/63/69/b763699fd1fa3bfb374442593ae642e1.png'></img>
-                        </NavLink>
-                        <NavLink to="/linkedin" >
-                            <img src='https://p.kindpng.com/picc/s/32-326233_linkedin-thompson-electric-company-linkedin-logo-bw-png.png'></img>
-                        </NavLink>
-                        <NavLink to="../github.com" >
-                            <img src='http://pngimg.com/uploads/github/github_PNG40.png'></img>
-                        </NavLink>
+                        <a href="https://www.facebook.com/" className='icon-holder1'>  
+                        <FontAwesomeIcon icon={faFacebook} className="icon fb" style={{width:'2rem' ,height:'2rem' ,marginLeft:'0.5rem', marginTop:'1rem'}}/>
+                        </a>
+                        <a href="https://github.com/karanjad123" className='icon-holder1'>
+                        <FontAwesomeIcon icon={faGithub} className="icon gh" style={{width:'2rem' ,height:'2rem' ,marginLeft:'0.5rem', marginTop:'1rem'}} />
+                        </a>
+                        <a href="https://www.linkedin.com/in/karan-jadhav-0957ba194/" className='icon-holder1'>
+                        <FontAwesomeIcon icon={faLinkedin} className="icon yt" style={{width:'2rem' ,height:'2rem' ,marginLeft:'0.5rem', marginTop:'1rem'}}/>
+                        </a>
                         
                     </li>
                     

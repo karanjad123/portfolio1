@@ -13,8 +13,10 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 
-const im='https://wallpaper.dog/large/20342639.jpg';
-const im1='https://wallpapercave.com/wp/wp5029986.jpg'
+const im='https://www.itl.cat/pngfile/big/287-2874810_wallpaper-fractal-circles-patterns-dark-effect-matematike-zagonetke.jpg';
+const im2='https://www.itl.cat/pngfile/big/287-2874810_wallpaper-fractal-circles-patterns-dark-effect-matematike-zagonetke.jpg'
+const im1='https://www.desktopbackground.org/download/o/2015/08/13/994770_abstract-android-wallpapers-hd-androidwalls-org_1080x1920_h.jpg'
+const im3='https://www.desktopbackground.org/download/o/2015/08/13/994770_abstract-android-wallpapers-hd-androidwalls-org_1080x1920_h.jpg'
 function AboutPage() {
     let workIconStyles = { background: "#06D6A0" };
     let schoolIconStyles = { background: "#f9c74f" };
@@ -24,7 +26,7 @@ function AboutPage() {
             
                 <Parallax
                 bgImage={im}
-                strength={600}
+                strength={800}
                 >
                 <div className='para'>
                     <Title title={'About Me'} span={'About Me'} className="para" />
@@ -34,7 +36,10 @@ function AboutPage() {
            
            
 
-            
+            <Parallax
+            bgImage={im1}
+            strength={800}
+            >
             <div className='para'>
             <Title title={'My Skills'} span={'My Skills'} className="para" />
             <div className="skillsContainer">
@@ -50,8 +55,9 @@ function AboutPage() {
                 <Skill skill={'HTML/CSS'} progress={'60%'} width={'60%'} />
             </div>
             </div>
+            </Parallax>
             <Parallax
-                bgImage={im1}
+                bgImage={im2}
                 strength={600}
                 >
             <div className='para'>
@@ -80,9 +86,13 @@ function AboutPage() {
             </div>
             </div>
             </Parallax>
-            <div className='para'>
+            <Parallax
+                bgImage={im3}
+                strength={600}
+                >
+            <div className='para5'>
             <Title title={'Timeline'} span={'Timeline'} className="para" />
-                <VerticalTimeline>
+                <VerticalTimeline className='timeline'>
                     {timelineElements.map((element) => {
                     let isWorkIcon = element.icon === "work";
                     let showButton =
@@ -95,6 +105,7 @@ function AboutPage() {
                         key={element.key}
                         date={element.date}
                         dateClassName="date"
+                        
                         iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
                         icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
                         >
@@ -120,7 +131,9 @@ function AboutPage() {
                     })}
                 </VerticalTimeline>
             </div>
+            </Parallax>
         </div>
+        
 
     )
 }

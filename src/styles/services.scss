@@ -10,13 +10,14 @@
         border-bottom: 1px solid #2e344e;
         border-top: 8px solid #2e344e;
         transition: all .4s ease-in-out;
+        box-shadow: 4px 4px 4px 2px rgba(0, 0, 0, 0.2);
         @media screen and (max-width:1400px){
             width: 100%;
             margin-bottom: 1rem;
         }
         &:hover{
             border-top: 8px solid #037FFF;
-            background-color: #a5aabb;
+            background-color: white;
             transition: all .4s ease-in-out;
         }
         

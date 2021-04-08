@@ -11,14 +11,11 @@ import Typed from 'react-typed'
 function HomePage() {
     return (
         <div className="HomePage">
+            <div className='para2'>
             <header className="hero">
-            <div className="NavBar1">
-                <nav className="nav1">
-                    <div className="profile1">
-                        <img src={karan} alt=""/>
-                    </div>
-                </nav>
-            </div>
+            
+            
+                
                 <h1 className="hero-text">
                     Hi, I am 
                     <span> Karan Jadhav</span>
@@ -36,17 +33,19 @@ function HomePage() {
                   />
                 </p>
                 <div className="icons">
-                    <Link to="test" className="icon-holder">
+                    <a href="https://www.facebook.com/" className='icon-holder'>
                         <FontAwesomeIcon icon={faFacebook} className="icon fb" />
-                    </Link>
-                    <Link to="test" className="icon-holder">
+                    </a>
+                    <a href="https://github.com/karanjad123" className='icon-holder'>
                         <FontAwesomeIcon icon={faGithub} className="icon gh" />
-                    </Link>
-                    <Link to="test" className="icon-holder">
+                    </a>
+                    <a href="https://www.linkedin.com/in/karan-jadhav-0957ba194/" className='icon-holder'>
                         <FontAwesomeIcon icon={faLinkedin} className="icon yt"/>
-                    </Link>
+                    </a>
                 </div>
+                
             </header>
+            </div>
         </div>
     )
 }

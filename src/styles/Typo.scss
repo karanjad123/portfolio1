@@ -1,12 +1,19 @@
 
 .HomePage{
+    padding-top: 20rem;
     position: absolute;
-    background: url('https://cdn.wallpapersafari.com/2/54/N4AyOo.jpg');
+    background: url('https://wallpapercave.com/wp/wp3531097.jpg');
     top: 35%;
-    left: 50%;
+    
     transform: translate(-50%, -50%);
-    width: 95%;
-    height: 70rem;
+    width: 155%;
+    height: 65rem;
+    margin-left: 0;
+}
+.para2{
+    margin-top: 15rem;
+    margin-left: 55rem;
+    margin-right: 5rem;
 }
 .NavBar1 {
     margin-top: 10rem;
@@ -39,8 +46,10 @@
     color: white;
     text-align: center;
     font-size: 3.6rem;
+    font-weight: 5px;
     span{
-        color: rgb(30, 236, 47);
+        color: #007bff;
+        
     }
 }
 
@@ -53,7 +62,7 @@
 .h-sub-text1{
     font-size: 1.5rem;
     margin-top: -2rem;
-    color: rgb(30, 236, 47);
+    color: #007bff;
     text-align: center;
 }
 
@@ -76,7 +85,24 @@
             color: rgba(212, 45, 212, 0.788);
         }
         .yt:hover{
-            color: rgb(8, 44, 247);
+            color: rgb(0, 0, 0);
+        }
+    }
+    .icon-holder1{
+        margin-right: 1rem;
+        .icon{
+           font-size: 2rem;
+           color: #a4acc4;
+           transition: all .4s ease-in-out;
+        }
+        .fb:hover{
+            color: blue;
+        }
+        .gh:hover{
+            color: rgba(212, 45, 212, 0.788);
+        }
+        .yt:hover{
+            color: rgb(0, 0, 0);
         }
     }
 }

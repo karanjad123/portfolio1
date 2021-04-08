@@ -2,7 +2,7 @@ import React from 'react'
 import ContactItem from '../components/ContactItem';
 import {Parallax} from 'react-parallax';
 import Title from '../components/Title';
-const im='https://images.hdqwalls.com/wallpapers/twitz-color-abstract-se.jpg'
+const im='https://www.itl.cat/pngfile/big/287-2874810_wallpaper-fractal-circles-patterns-dark-effect-matematike-zagonetke.jpg'
 function ContactPage() {
     return (
         <div className="back">
